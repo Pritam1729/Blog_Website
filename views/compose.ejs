@@ -1,0 +1,18 @@
+
+<%-include("partials/header")-%>
+
+<h1 style = "font-weight: bold;">Compose</h1>
+
+<form class="form-floating" action = "/compose" method = "post">
+    <h3 style = "font-weight : bold">Title</h3>
+    <input type="text" class="form-control" id="floatingInputValue" name = "postTitle" >
+    <h3 style = "font-weight: bold;">Post</h3>
+    <div class="form-floating">
+        <textarea class="form-control"  id="floatingTextarea2" style="height: 150px" name = "postText"></textarea>
+    </div>
+    <button style = "margin-top: 3rem;" class = "btn btn-primary" type = "submit">Publish</button>
+    
+</form>
+
+
+<%-include("partials/footer")%>

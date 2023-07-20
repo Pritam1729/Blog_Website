@@ -6,10 +6,9 @@
 <p><%=homeStarting%></p>
 <%posts.forEach(function(ele){%>
     <% var length = 100;
-    let subString = (ele.postText).substring(0,length);
+    let subString = (ele.para).substring(0,length);
     %>
-    <h1><%= ele.title %></h1>
-    <p><%= subString + "..."%><a href = "/posts/<%=ele.title%>" >Read More</a></p>
+    <h1><%= ele.name %></h1>
+    <p><%= subString + "..."%><a href = "/posts/<%=ele._id%>" >Read More</a></p>
 <%}) %>
 
-<%-include("partials/footer");-%>
